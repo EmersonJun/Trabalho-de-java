@@ -1,5 +1,7 @@
 package model.interfaces;
 
-public class Emprestavel {
-    
+public interface Emprestavel {
+
+    boolean emprestar();
+    boolean devolver();
 }
