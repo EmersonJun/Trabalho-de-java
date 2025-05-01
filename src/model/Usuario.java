@@ -4,7 +4,7 @@ public class Usuario {
     private String nome, email, endereco;
     private int telefone;
     private boolean possuiEmprestimo;
-    
+
     public Usuario(String nome, String email, String endereco, int telefone, boolean possuiEmprestimo) {
         this.nome = nome;
         this.email = email;
@@ -13,6 +13,7 @@ public class Usuario {
         this.possuiEmprestimo = false;
         
     }
+    
     public String getNome() {
         return nome;
     }

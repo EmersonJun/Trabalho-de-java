@@ -15,36 +15,17 @@ public class Emprestimo {
         this.dataDevolucaoPrevista = dataDevolucaoPrevista;
     }
 
-    public Livro getLivro() {
+    public Livro getLivro() { 
         return livro;
     }
-
-    public void setLivro(Livro livro) {
-        this.livro = livro;
+    public Usuario getUsuario() { 
+        return usuario; 
     }
-
-    public Usuario getUsuario() {
-        return usuario;
+    public LocalDate getDataDEvolucaoPrevista() { 
+        return dataDevolucaoPrevista; 
     }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public LocalDate getDataEmprestimo() {
-        return dataEmprestimo;
-    }
-
-    public void setDataEmprestimo(LocalDate dataEmprestimo) {
-        this.dataEmprestimo = dataEmprestimo;
-    }
-
     public LocalDate getDataDevolucaoPrevista() {
         return dataDevolucaoPrevista;
-    }
-
-    public void setDataDevolucaoPrevista(LocalDate dataDevolucaoPrevista) {
-        this.dataDevolucaoPrevista = dataDevolucaoPrevista;
     }
 
     @Override
@@ -52,5 +33,4 @@ public class Emprestimo {
         return "Emprestimo [livro=" + livro + ", usuario=" + usuario + ", dataEmprestimo=" + dataEmprestimo
                 + ", dataDevolucaoPrevista=" + dataDevolucaoPrevista + "]";
     }
-    
 }
