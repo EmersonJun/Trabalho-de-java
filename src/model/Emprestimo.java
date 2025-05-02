@@ -24,9 +24,7 @@ public class Emprestimo {
     public LocalDate getDataDEvolucaoPrevista() { 
         return dataDevolucaoPrevista; 
     }
-    public LocalDate getDataDevolucaoPrevista() {
-        return dataDevolucaoPrevista;
-    }
+    
 
     @Override
     public String toString() {
