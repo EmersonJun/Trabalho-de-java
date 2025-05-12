@@ -41,8 +41,9 @@ public class Livro {
         this.autor = autor;
     }
     @Override
-    public String toString() {
-        return "Livro [exemplaresDisponiveis=" + exemplaresDisponiveis + ", anoDePublicacao=" + anoDePublicacao
-                + ", nomeDoLivro=" + nomeDoLivro + ", autor=" + autor + "]";
-    }
+        public String toString() {
+        return String.format("Título: %s | Autor: %s | Ano: %d | Disponíveis: %d",
+        nomeDoLivro, autor, anoDePublicacao, exemplaresDisponiveis);
+        }
+
 }

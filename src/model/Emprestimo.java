@@ -27,8 +27,9 @@ public class Emprestimo {
     
 
     @Override
-    public String toString() {
-        return "Emprestimo [livro=" + livro + ", usuario=" + usuario + ", dataEmprestimo=" + dataEmprestimo
-                + ", dataDevolucaoPrevista=" + dataDevolucaoPrevista + "]";
-    }
+        public String toString() {
+        return String.format("Livro: [%s]\nUsuário: [%s]\nData Empréstimo: %s | Data Prevista Devolução: %s",
+            livro.toString(), usuario.toString(), dataEmprestimo, dataDevolucaoPrevista);
+}
+
 }

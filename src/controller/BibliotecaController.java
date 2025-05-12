@@ -44,4 +44,7 @@ public class BibliotecaController {
     public List<Usuario> getUsuarios() { 
         return usuarios; 
     }
+    public List<Livro> getLivros() {
+    return livros;
+}
 }
