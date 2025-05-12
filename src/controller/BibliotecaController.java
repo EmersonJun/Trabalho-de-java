@@ -26,7 +26,7 @@ public class BibliotecaController {
     }
 
     public void devolverLivro(Emprestimo e, LocalDate dataDevolucao) {
-        if (e == null) return; // evita NullPointerException
+        if (e == null) return; 
         Devolucao d = new Devolucao(e.getLivro(), e.getUsuario(), e.getDataDEvolucaoPrevista().minusDays(7), dataDevolucao, 0);
         devolucoes.add(d);
         if (dataDevolucao.isAfter(e.getDataDEvolucaoPrevista())) {
